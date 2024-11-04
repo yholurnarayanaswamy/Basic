@@ -1,0 +1,126 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 450px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border-top: 8px solid #0066ff;
+}
+
+h1, h2 {
+    color: #0044cc;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #00796b;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus {
+    border: 2px solid #00796b;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 121, 107, 0.5);
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background: #00796b;
+    border: 2px solid #004d40;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+    background: #00796b;
+    border: 2px solid #004d40;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#tipAmount,
+#totalWithTip {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+    color: #777;
+    border: 1px solid #ddd;
+}
+
+#error-message {
+    color: #e53935;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+button#clearButton {
+    margin-top: 20px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button#clearButton:hover {
+    background-color: #004d40;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#conversionInfo {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #00796b;
+}
+
+span#tipPercentageLabel {
+    font-weight: bold;
+    color: #00796b;
+    margin-left: 10px;
+}
